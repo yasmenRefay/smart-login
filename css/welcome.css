@@ -1,0 +1,18 @@
+body{
+    background-color: #24353f;
+}
+
+nav button {
+    color: rgba(255, 255, 255, .5) !important;
+    background-color: transparent;
+}
+
+.group {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.home {
+    margin-top: 15% !important;
+    width: 60%;
+    color: #17a2b8;
+}

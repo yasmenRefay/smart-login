@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--*=============bootstrap link css============= -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <!--$============= css link================= -->
+    <link rel="stylesheet" href="./css/signup.css"/>
+    <!--^============= title================= -->
+    <title>signup</title>
+</head>
+<body>
+    <div class="home" id="signUp">
+        <div class="body  d-flex justify-content-center p-5">
+            <div class="main border-1 shadow-lg  ">
+                <h1 class="text-center">Smart Login System</h1>
+                <form >
+                    <input id="nameInp" class=" selected form-control mb-3 mt-3 " type="text" placeholder="Enter your Name" required />
+                    <input id="emailInp" class=" selected form-control mb-3 mt-3 " type="email" placeholder="Enter your Email" required />
+                    <input  id="passlInp"  class=" selected form-control mb-3 mt-3 " type="password" placeholder="Enter your password" required />
+                    <p class="text-danger text-center d-none"> incorrect email or password</p>
+                    <div id="exist" class="text-danger text-center"></div>
+                    <button type="button" id="loginbtn"  class=" bttn btn-outline-info  w-100 bg-transparent form-control">Login</button>
+                </form>
+                <p class="text-center text-white pt-3">You have an account? <span><button id="signinBtn" class="btn nn p-0 ">Sign in</button></span> </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--*=========bootstrap link js =========== -->
+    <script src="./js/bootstrap.bundle.min.js"></script> 
+    <!--?============= js link================= -->
+    <script src="./js/signup.js"></script>
+</body>
+</html>
