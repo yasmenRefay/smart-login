@@ -6,10 +6,6 @@
 
 
 
-
-
-
-
 // Global variables 
 var inputs = document.querySelectorAll('.selected');
 var loginbtn = document.getElementById('loginbtn');
@@ -89,6 +85,13 @@ function loginFun(){
 
 
 
+// for logout
+function logout() {
+    window.location.replace("http://127.0.0.1:5500/index.html?input1=gsfs%40gmail.com&input2=61252636347384gg");
+}
+
+
+
 
 // sign up button 
 signupBtn.addEventListener('click',myFunction)
@@ -98,11 +101,6 @@ function myFunction() {
 
 
 
-
-// for logout
-function logout() {
-    window.location.replace("http://127.0.0.1:5500/index.html?input1=gsfs%40gmail.com&input2=61252636347384gg");
-}
 
 
 
