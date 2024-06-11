@@ -9,7 +9,7 @@ var productlist =[];
 
 
 
-
+// validation of inputs
 for (var i=0 ; i<inputs.length; i++){
     inputs[i].addEventListener('input',function(e){
         var inptValue = e.target.value ;
@@ -57,7 +57,7 @@ var z = document.getElementById("passlInp").value;
 // sign in button 
 signinBtn.addEventListener('click',myFunction)
 function myFunction() {
-    window.location.replace("http://127.0.0.1:5500/index.html?input1=gsfs%40gmail.com&input2=61252636347384gg");
+    window.location.replace("./index.html");
 }
 
 
@@ -85,15 +85,10 @@ function addfun(){
     empfun()
     localStorage.setItem('signUp',JSON.stringify(productlist))
 // for check email is exist
-    var namee = nameInp.value;
     var emaill = emailInp.value;
-    var passs = passlInp.value;
     for(var i=0 ; i<productlist.length -1 ; i++){
         if(productlist[i].email === emaill ){
             document.getElementById('exist').innerHTML = '<span>try another Email</span>'
-        }
-        if(productlist[i].email === emaill && productlist[i].password === passs) {
-            document.getElementById('userName').innerHTML = "Welcome " + productlist[i].name
         }
     }
     resetForm() 
