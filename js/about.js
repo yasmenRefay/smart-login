@@ -67,28 +67,26 @@ var y = document.getElementById("passlInp").value;
 
 
 // for login the user
+var username = localStorage.getItem('nameofUsername')
+if(username) {
+    document.getElementById('userName').innerHTML = "Welcome" + username
+}
+
+
 function loginFun(){
     var emaill = emailInp.value;
     var passs = passlInp.value;
     for(var i=0 ; i<newArray.length ; i++){
-        if(newArray[i].email === emaill || newArray[i].password === passs) {
-            var bb = newArray[i].name
-            console.log(bb)
-            // document.getElementById('userName').innerHTML = "Welcome" + bb
+        if(newArray[i].email.toLowerCase() === emaill.toLowerCase() && newArray[i].password.toLowerCase() === passs.toLowerCase()) {
+            localStorage.setItem('nameofUsername',newArray[i].name)
             window.location.replace("http://127.0.0.1:5500/welcome.html");
         }else {
             document.getElementById('exist').innerHTML = '<span>incorrect email or password</span>'
         }
-
     }
 }
 
 
-
-// for logout
-function logout() {
-    window.location.replace("http://127.0.0.1:5500/index.html?input1=gsfs%40gmail.com&input2=61252636347384gg");
-}
 
 
 
@@ -99,6 +97,12 @@ function myFunction() {
     window.location.replace("http://127.0.0.1:5500/signup.html");
 }
 
+
+// for logout
+Logout.addEventListener('click',logout)
+function logout() {
+    window.location.replace("http://127.0.0.1:5500/index.html?input1=gsfs%40gmail.com&input2=61252636347384gg");
+}
 
 
 
