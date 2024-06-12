@@ -11,7 +11,7 @@ if(username) {
 Logout.addEventListener('click',logout)
 function logout() {
     // localStorage.removeItem('nameofUsername')
-    window.location.replace("./index.html");
+    window.open("./index.html");
 
 }
 

@@ -57,7 +57,7 @@ var z = document.getElementById("passlInp").value;
 // sign in button 
 signinBtn.addEventListener('click',myFunction)
 function myFunction() {
-    window.location.replace("./index.html");
+    window.open("./index.html");
 }
 
 

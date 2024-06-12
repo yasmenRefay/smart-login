@@ -73,7 +73,7 @@ function loginFun(){
     for(var i=0 ; i<newArray.length ; i++){
         if(newArray[i].email.toLowerCase() === emaill.toLowerCase() && newArray[i].password.toLowerCase() === passs.toLowerCase()) {
             localStorage.setItem('nameofUsername',newArray[i].name)
-            window.location.replace("./welcome.html");
+            window.open("./welcome.html");
         }else {
             document.getElementById('exist').innerHTML = '<span>incorrect email or password</span>'
         }
@@ -84,7 +84,7 @@ function loginFun(){
 // sign up button 
 signupBtn.addEventListener('click',myFunction)
 function myFunction() {
-    window.location.replace("./signup.html");
+    window.open("./signUp.html");
 }
 
 
